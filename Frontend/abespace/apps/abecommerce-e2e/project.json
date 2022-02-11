@@ -1,0 +1,28 @@
+{
+  "root": "apps/abecommerce-e2e",
+  "sourceRoot": "apps/abecommerce-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/abecommerce-e2e/cypress.json",
+        "devServerTarget": "abecommerce:serve:development"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "abecommerce:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/abecommerce-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["abecommerce"]
+}

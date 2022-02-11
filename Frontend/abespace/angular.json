@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "abecommerce": "apps/abecommerce",
+    "abecommerce-e2e": "apps/abecommerce-e2e"
+  }
+}
