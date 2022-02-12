@@ -2,6 +2,8 @@
   "version": 2,
   "projects": {
     "abecommerce": "apps/abecommerce",
-    "abecommerce-e2e": "apps/abecommerce-e2e"
+    "abecommerce-e2e": "apps/abecommerce-e2e",
+    "admin": "apps/admin",
+    "admin-e2e": "apps/admin-e2e"
   }
 }
